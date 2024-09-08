@@ -1,0 +1,32 @@
+package com.example.GrievanceManagement.entity;
+
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.Set;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class Supervisor {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long supervisorId;
+    private String supervisorName;
+    private String supervisorEmail;
+    private String supervisorPassword;
+
+
+    @OneToMany(mappedBy = "managedBy", cascade = CascadeType.ALL)
+    private Set<Assignee> assignees;
+
+    @ManyToOne
+    @JoinColumn(name = "department_id")
+    private Department department;
+
+}
