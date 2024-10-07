@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("grievances")
+@RequestMapping("/grievances")
 public class GrievanceController {
     private final GrievanceService grievanceService;
    @Autowired
@@ -20,7 +20,7 @@ public class GrievanceController {
         this.grievanceService = grievanceService;
     }
 
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity <List<Grievance>> getAllGrievances(){
         List <Grievance> grievances = grievanceService.getAllGrievances();
         return ResponseEntity.ok(grievances);
