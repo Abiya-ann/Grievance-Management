@@ -10,20 +10,20 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("user")
+@RequestMapping("/user")
 public class UserController {
     private final UserService userService;
     @Autowired
     public UserController(UserService userService){
         this.userService = userService;
     }
-    @PostMapping
+    @PostMapping("/create")
         public ResponseEntity<User>createUser(@RequestBody User user){
         User savedUser = userService.saveUser(user) ;
         return ResponseEntity.ok(savedUser);
     }
 
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<List <User>>getAllUsers(){
          List<User> users= userService.getAllUsers();
          return ResponseEntity.ok(users);
