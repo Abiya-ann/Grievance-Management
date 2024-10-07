@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("department")
+@RequestMapping("/department")
 public class DepartmentController {
     private  final DepartmentService departmentService;
     @Autowired
@@ -20,13 +20,13 @@ public class DepartmentController {
         this.departmentService = departmentService;
     }
 
-    @PostMapping
+    @PostMapping("/create")
     public ResponseEntity <Department> createDepartment(@RequestBody Department department){
         Department createdDepartment= departmentService.saveDepartment(department);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdDepartment);
 
     }
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity <List<Department>> getAllDepartments(){
         List <Department> departments = departmentService.getAllDepartments();
         return ResponseEntity.ok(departments);
