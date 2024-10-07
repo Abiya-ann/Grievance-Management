@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("assignees")
+@RequestMapping("/assignees")
 
 public class AssigneeController {
     private final AssigneeService assigneeService;
@@ -21,13 +21,13 @@ public class AssigneeController {
         this.assigneeService = assigneeService;
     }
 
-    @PostMapping
+    @PostMapping("/create")
     public ResponseEntity<Assignee> createAssignee(@RequestBody Assignee assignee){
         Assignee savedassignee = assigneeService.saveAssignee(assignee);
         return ResponseEntity.ok(savedassignee);
     }
 
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<List <Assignee>>getAllAssignee(){
         List<Assignee> assignee= assigneeService.getAllAssignee();
         return ResponseEntity.ok(assignee);
