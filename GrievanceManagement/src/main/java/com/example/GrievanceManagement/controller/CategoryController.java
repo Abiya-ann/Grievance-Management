@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("category")
+@RequestMapping("/category")
 public class CategoryController {
     private final CategoryService categoryService;
     @Autowired
@@ -19,12 +19,12 @@ public class CategoryController {
         this.categoryService = categoryService;
     }
 
-    @PostMapping
+    @PostMapping("/create")
     public ResponseEntity<Category> createCategory(@RequestBody Category category) {
         Category savedCategory = categoryService.saveCategory(category);
         return ResponseEntity.status(HttpStatus.CREATED).body(savedCategory);
     }
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<List<Category>>getAllCategories(){
         List <Category> categories = categoryService.getAllCategories();
         return ResponseEntity.ok(categories);
