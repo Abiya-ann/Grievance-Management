@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("supervisor")
+@RequestMapping("/supervisor")
 public class SupervisorController {
     private final SupervisorService supervisorService;
     private final GrievanceService grievanceService;
@@ -22,7 +22,7 @@ public class SupervisorController {
         this.supervisorService = supervisorService;
         this. grievanceService = grievanceService;
     }
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity <List<Supervisor>> getAllSupervisors(){
         List <Supervisor> supervisors = supervisorService.getAllSupervisors();
         return ResponseEntity.ok(supervisors);
