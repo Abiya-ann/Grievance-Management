@@ -31,14 +31,17 @@ public class Grievance {
 
 
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "user_id")
     private User  submittedBy;
 
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "category_id")
     private Category has;
 
     @ManyToMany(mappedBy = "assignedGrievances")
+    @JsonIgnore
     private Set<Assignee> assignees;
 
 
