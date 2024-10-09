@@ -22,5 +22,6 @@ public class User {
     private String password;
 
     @OneToMany(mappedBy = "submittedBy", cascade = CascadeType.ALL)
+    @JsonIgnore
     private List<Grievance> grievances;
 }
