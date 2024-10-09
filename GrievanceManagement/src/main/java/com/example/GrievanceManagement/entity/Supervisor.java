@@ -23,9 +23,11 @@ public class Supervisor {
 
 
     @OneToMany(mappedBy = "managedBy", cascade = CascadeType.ALL)
+    @JsonIgnore
     private Set<Assignee> assignees;
 
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "department_id")
     private Department department;
 
