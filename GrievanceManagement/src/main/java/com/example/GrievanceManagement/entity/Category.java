@@ -18,5 +18,6 @@ public class Category {
     private String categoryName;
 
     @OneToMany(mappedBy = "has", cascade = CascadeType.ALL)
+    @JsonIgnore
     private Set<Grievance> grievances;
 }
