@@ -1,0 +1,52 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.griev {
+  padding: 20px;
+  margin: 0;
+  height: 100vh;
+}
+
+.grievance-table {
+  width: 100%;
+  border-collapse: collapse; /* Removes borders between table cells */
+  margin-top: 20px;
+}
+
+.grievance-table th,
+.grievance-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.grievance-table th {
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+}
+
+.grievance-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light background for even rows */
+}
+
+.grievance-table tr:hover {
+  background-color: #4f2d56;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.grievance-table td {
+  border: none;
+}
+
+@media screen and (max-width: 376px) {
+  .grievance-table th,
+  .grievance-table td {
+    font-size: smaller;
+    padding: 5px;
+  }
+}

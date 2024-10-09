@@ -1,0 +1,28 @@
+
+.griev {
+  max-width: 100vw;
+  
+  padding: 20px;
+  
+  background-image: linear-gradient(to bottom, #7a4d73, black);
+  color: #ffffff;
+}
+
+.griev h1, .griev h2, .griev h3 {
+  text-align: center;
+}
+
+.outerForm{
+  border: #1b1f61 1px solid;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #7a4d73, black);
+}
+
+@media screen and (max-width: 376px) {
+  .griev {
+    padding: 10px;
+  }
+}
+
+
+

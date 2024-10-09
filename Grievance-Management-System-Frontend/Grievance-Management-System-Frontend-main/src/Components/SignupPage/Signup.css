@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #7a4d73, black);
+    padding: 30px;
+  }
+  
+ .Form h1{
+  font-size: 50px;
+  font-weight: 900;
+ }
+  .signupForm {
+    
+    padding: 40px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+
+  .form{
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  
+
+  .form label {
+    font-weight: normal;
+    display:flex;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+
+  .form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+
+  
+
+  .form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(57, 19, 39);
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
+  
+
+  .form button:hover {
+    background-color: #191790;
+  }
+  
+  
+  p {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+
+  @media (max-width: 768px) {
+    .Form {
+      padding: 10px;
+    }
+  
+    .signupForm {
+      padding: 15px;
+    }
+  
+    .form input, .form button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form input, .form button {
+      font-size: 12px;
+      padding: 6px;
+    }
+  }
+  

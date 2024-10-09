@@ -1,0 +1,35 @@
+
+
+.prevGriev {
+    background: linear-gradient(to bottom, #7a4d73, black);
+    height:150vh;
+    padding-top:0;
+    margin-top:0;
+}
+
+.grievance-list {
+    display: flex;    
+    justify-content: center;
+}
+
+table, th, td {
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    text-align: center;
+    padding: 1vw;
+}
+
+td:hover {
+    background-color: #191717;
+    color: white;
+}
+
+tr, th {
+    background-color: #decce0;
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+}
+
+th {
+    background-color: #31064689;
+}

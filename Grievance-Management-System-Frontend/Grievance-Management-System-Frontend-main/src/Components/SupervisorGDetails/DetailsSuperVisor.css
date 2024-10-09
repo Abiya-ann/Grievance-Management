@@ -1,0 +1,106 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+  
+  .detailsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(to bottom, #7a4d73, black); 
+    border: 5px white;/* Full-screen background */
+  }
+  .lab {
+    padding: 20px;
+    
+    border-color: white;
+    border-radius: 8px; /* Slight rounding of corners */
+    margin: 20px 0; /* Adds some space above and below the container */
+    width: 80%; /* Adjusts the width to a reasonable size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for depth */
+    text-align: center;
+  }
+  
+  .details {
+    color: #333; /* Darker text for readability */
+    font-size: 1rem; /* Adjust the font size */
+    margin-bottom: 10px; /* Space between each line */
+    text-align: left; /* Aligns text to the left */
+  }
+  
+  .lab strong {
+    color: #1b1f61; /* Different color for strong elements */
+    font-weight: bold;
+  }
+  
+  .detailsContainer h1 {
+    color: white;
+  }
+  
+  .outerForm {
+    width: 100%;
+    max-width: 600px;
+    border: 6px solid #ccc;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  .details {
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+  }
+  
+  .updateStatus, .feedbackSection, .assigneeSection {
+    margin: 15px 0;
+  }
+  
+  .update-select, .assignee-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #501b40;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color: white;
+  }
+  
+  textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: vertical;
+  }
+  
+  .submitBtn {
+    background-color: #870631;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  .submitBtn:hover {
+    background-color: #4a0de4;
+  }
+  
+  .successMessage {
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+  }

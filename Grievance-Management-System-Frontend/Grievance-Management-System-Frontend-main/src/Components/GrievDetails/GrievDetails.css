@@ -1,0 +1,174 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(to bottom, #7a4d73, black); 
+  border: 5px white;
+}
+
+.lab {
+  padding: 20px;
+  border-color: white;
+  border-radius: 8px;
+  margin: 20px 0;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+  color: white; /* Changing text color to white for better readability */
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.lab strong {
+  color: #ffce00; /* Bright color for strong elements */
+  font-weight: bold;
+}
+
+.detailsContainer h1 {
+  color: white;
+}
+
+.outerForm {
+  width: 100%;
+  max-width: 600px;
+  border: 6px solid #ccc;
+  padding: 20px;
+  background-color: #333; /* Darker background to maintain color tone */
+  border-radius: 8px;
+}
+
+.updateStatus, .feedbackSection, .assigneeSection {
+  margin: 15px 0;
+}
+
+.update-select, .assignee-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #501b40;
+  color: white;
+  margin-top: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: white; /* Keeping label color consistent */
+}
+
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  resize: vertical;
+}
+
+.submitBtn {
+  background-color: #870631;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  display: block; 
+  margin: 0 auto; 
+}
+
+.submitBtn:hover {
+  background-color: #4a0de4;
+}
+
+.successMessage {
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/*html, body{
+  padding:0;
+    margin:0;
+    height:100%;
+}.detailsContainer {
+    height:100%;
+    padding:0;
+    margin:0;
+
+  }
+  .detailsContainer h1{
+    color: white;
+  }
+  .outerForm {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .details{
+    color: rgb(71, 169, 244);
+  }
+  
+  strong{
+    color: white;
+  }
+
+  .updateStatus, .feedbackSection {
+    margin: 15px 0;
+  }
+
+  .update-select{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #1b1f61;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color:white;
+  }
+  
+  textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: vertical;
+  }
+  
+  .submitBtn {
+    background-color: #1b1f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submitBtn:hover {
+    background-color: #1b1f61;
+  }
+  
+  .successMessage {
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+  }*/
+  

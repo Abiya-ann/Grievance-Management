@@ -1,0 +1,103 @@
+.grievForm {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Full height of the viewport */
+    background: linear-gradient(to bottom, #7a4d73, black); /* Set the gradient background */
+}
+
+.outerForm {
+    width: 100%; /* Full width within the parent */
+    max-width: 500px; /* Limit maximum width for elegance */
+    margin: 20px; /* Margin around the form */
+    border: black; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    background-color: white; /* White background for the outer form */
+}
+
+.grievForm h1, .grievForm h2, .grievForm h3 {
+    text-align: center;
+    color: white; 
+    font-size: 30px;
+}
+
+.grievForm h2 {
+    border-color: #f8f9fa;
+}
+
+.compForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between form elements */
+    color: white; /* Text color for form */
+    padding: 30px; /* Padding around the form */
+    border: 2px solid rgb(238, 173, 241); /* Add border to form content */
+    border-radius: 10px; /* Rounded corners for the border */
+    background-color: rgb(33, 1, 42); /* Background color for the form content */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    margin-top: 1vw; /* Margin above each group */
+}
+
+.form-group label {
+    font-size: 1rem; /* Font size for labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: white; /* Label color */
+}
+
+.form-group input, .form-group textarea {
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    outline: none; /* Remove outline */
+    transition: border-color 0.3s ease; /* Transition effect for border color */
+    background-color: #f8f9fa; /* Light background for input fields */
+    color: #000; /* Dark text color */
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Minimum height for the textarea */
+}
+
+button[type="submit"] {
+    padding: 10px; /* Padding inside button */
+    background-color: #75099f; /* Button color */
+    color: rgb(255, 255, 255); /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s ease; /* Transition effect for background color */
+}
+
+button[type="submit"]:hover {
+    background-color: #56245b; /* Darker shade on hover */
+}
+
+.prevGriev {
+    margin-top: 20px; /* Space above the link */
+    padding: 20px; /* Padding around the link */
+    font-size: 14px; /* Smaller font for the link */
+    text-align: center; /* Center the link */
+    margin-bottom:0;
+    
+}
+
+.prevGriev a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.prevGriev a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
