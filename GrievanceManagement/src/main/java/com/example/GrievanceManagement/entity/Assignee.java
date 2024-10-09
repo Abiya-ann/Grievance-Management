@@ -21,10 +21,12 @@ public class Assignee {
     private String role;
 
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "supervisor_id")
     private Supervisor managedBy;
 
     @ManyToMany
+     @JsonIgnore
     @JoinTable(
             name="assignee_grievance",
             joinColumns=@JoinColumn(name="assignee_id"),
@@ -33,6 +35,7 @@ public class Assignee {
 
     private Set<Grievance> assignedGrievances;
     @ManyToOne
+     @JsonIgnore
     @JoinColumn(name = "department_id")
     private Department department;
 
